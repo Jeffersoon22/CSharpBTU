@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Forms;
 
 namespace Davaleba2
 {
@@ -18,9 +19,10 @@ namespace Davaleba2
             brand = firma;
         }
 
-        public void GetValues()
+        public void GetValues(Label label)
         {
-            Console.WriteLine(color +"\n"+numberdoors);
+            label.Text = $"მფლობელის გვარია: {ownerLastName}" +
+                $"\nკარების რაოდენობა: {numberdoors}";
         }
 
     }
