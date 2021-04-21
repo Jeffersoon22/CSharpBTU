@@ -4,25 +4,18 @@ using System.Text;
 
 namespace Davaleba6
 {
-    class Klasi2
+    class Klasi_2
     {
-        private int[,] massivex2;
-        int jami = 0;
-
-        public Klasi2(int[,] massivex2)
+        private int jami = 0;
+        public int Jami(Klasi_1 klasi_1)
         {
-            this.massivex2 = massivex2;
-        }
-        public int Jami(Klasi2 klasi2)
-        {
-            foreach (var VARIABLE in klasi2.massivex2)
+            foreach (var VARIABLE in klasi_1.massive)
             {
                 if (VARIABLE % 2 == 0)
                 {
                     jami += VARIABLE;
                 }
             }
-
             return jami;
         }
     }
